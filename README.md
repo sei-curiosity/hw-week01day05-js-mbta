@@ -8,9 +8,8 @@
 
 ## Instructions
 
-1. Fork and clone this repository.
-1. Create and checkout to a new branch, named `homework`.
-1. When finished, add, commit and push to your fork to submit a pull request.
+# Fork and clone this repository.
+
 
 ## Activity
 
