@@ -38,28 +38,30 @@ const MBTA = {
     'Chinatown',
     'Back Bay',
     'Forest Hills'] 
+
+
 }
 
 
-const stopsBetweenStations =  (startLine, startStation, endLine , endStation) 
+const stopsBetweenStations = function (sLine, startStation, endLine , endStation) 
 {
 
  
-    console.log( `StartLine ${startLine} EndLine= ${endLine}` )
+    console.log( `StartLine ${sLine} EndLine= ${endLine}` )
 
-    if ( startLine=== endLine)
+    if ( sLine=== endLine)
     {
         const stopList ={} 
         let stopNumber= 0
         let station1 = 0 
         let station2 = 0 
 
-        console.log(MBTA[startLine].length)
+        console.log(MBTA[sLine].length)
 
-        for (let i = 0; i<= MBTA[startLine].length ;++i)
+        for (let i = 0; i<= MBTA[sLine].length ;++i)
 
         {
-            const stop = startLine[i]
+            const stop = sLine[i]
             stopList[stop] = i
             console.log( stopList[stop] + stop)
         }
@@ -75,8 +77,9 @@ const stopsBetweenStations =  (startLine, startStation, endLine , endStation)
 
 
 }
-stopsBetweenStations('Red', 'Alewife', 'Red', 'Alewife') 
 
+
+stopsBetweenStations('RedLine', 'SouthStation', 'RedLine', 'Alewife')
 
 
 //console.log ("Green Line Distination:" + MBTA.GreenLine)
