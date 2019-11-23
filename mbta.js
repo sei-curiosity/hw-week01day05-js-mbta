@@ -51,7 +51,7 @@ const stopsBetweenStations = function(
         mbta[endLine].indexOf(endStation) - mbta[endLine].indexOf("Park Street")
       );
   }
-  return Math.abs(numOfStations);
+  return numOfStations;
 };
 
 console.log(stopsBetweenStations("red", "Alewife", "red", "Alewife"));
