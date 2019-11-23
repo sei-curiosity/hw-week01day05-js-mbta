@@ -82,13 +82,6 @@ const printTheRide = function (startLine, startStation, endLine, endStation) {
                         }
                     }
                 }
-
-                //        }
-                //         //    else {
-                //         //     for (i = startLine.indexOf(startStation) - 1; i < startLine.length; i--) {
-                //         //         console.log(`Rider arrives at ${startLineColor} Line and ${startLine[i]}.`);
-                //}
-
             }
         })
     }
@@ -118,7 +111,6 @@ const printTheRide = function (startLine, startStation, endLine, endStation) {
                 if (endLine.indexOf(mainStation) < endLine.indexOf(endStation)) {
                     for (let i = endLine.indexOf(mainStation) + 1; i <= endLine.indexOf(endStation); i++) {
                         console.log(`Rider arrives at ${endLineColor} Line and ${endLine[i]}.`);
-                        //transStation = startLine[i];
                     }
 
                 } else {
@@ -173,4 +165,4 @@ function countToEndStation(endLine, endStation) {
 }
 
 stops = stopsBetweenStations('green', 'Center', 'orange', 'Chinatown');
-console.log(`${stops}`);
+console.log(`${stops} Stops`);
