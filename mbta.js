@@ -28,7 +28,7 @@ const mbtaLine = {
 }
 const stopsBetweenStations = function(Start_Line, Start_Station,End_Line,End_Station){
     let numberOfStops = 0
-    if(Start_Line == End_Line){
+    if(Start_Line == End_Line && Start_Station == End_Station){
         numberOfStops = Math.abs(mbtaLine[End_Line].indexOf(End_Station) - mbtaLine[Start_Line].indexOf(Start_Station))
         //return numberOfStops
     }
