@@ -90,7 +90,7 @@ function stopsBetweenStations(
   // 8. if start line is end line
   if (startLine === endLine) {
     // 9. subtract start index by end index
-    stops = Math.abs(startIndex) - Math.abs(endIndex);
+    stops = Math.abs(startIndex - endIndex);
   } else {
     // 10. add the total of stops from start to total of stops in end
     stops = Math.abs(totalStopsFromStart) + Math.abs(totalStopsFromEnd);
